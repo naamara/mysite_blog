@@ -1,0 +1,13 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+BLOG INTERFACE
+	<img src="{{ post.image.url }}"> 
+	<h3> {{ post.title }} </h3>
+	<h6> on {{ post.date }} </h6>
+	{{ post.body|safe|linebreaks }} 
+	{{ post.website }}  
+	<a href="{{ post.website }}" target="_blank"> {{ post.website }} </a>
+
+{% endblock %}

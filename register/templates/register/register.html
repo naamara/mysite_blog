@@ -1,0 +1,32 @@
+
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+	<h1> Register with the system </h1>
+	{% if registered %}
+	the system says: <strong> thank you for registering! </strong>
+	<a href ="/"> Return to the homepage.</a><br />
+	{% else %}
+	the system says: <strong> Register here! </strong> <br />
+
+	<!-- You should be aware of the enctype attribute for the <form> element. When you want users to upload files from a form, it’s an absolute must to set enctype to multipart/form-data. This attribute and value combination instructs your browser to send form data in a special way back to the server.-->
+
+	<form id = "user_form" method="post" action ="" 
+		enctype ="multipart/form-data">
+
+		{% csrf_token %}
+
+		<!-- Display each form. the as_p method wraps each element in a paragraph (<p>) element. 
+		This ensures each element appears on a new line, making everything look neater.-->
+		{{ user_form.as_p }}
+		{{ profile_form.as_p }}
+
+		<!--provide a button to click to submit the form.  -->
+		<input type="submit" name="submit" value ="Register" />
+	</form>
+	{% endif %}
+
+{% include "personal/includes/feedback.html" %}
+
+{% endblock %}
