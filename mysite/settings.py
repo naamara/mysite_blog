@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',    
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "social_widgets",
+    'django_instagram',
     #'django.contrib.sites',
     'personal',
     'blog',

@@ -1,17 +1,40 @@
 
 {% extends "personal/header.html" %}
+{% load staticfiles%} 
+{% load social_widgets %}
 
 {% block content %}
 
-<ul>
-	<li>
-		Its all about luck to know programming
-	</li>
-	<li>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/weeI1G46q0o" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-	</li>
-</ul>
 
+			<!-- Start WOWSlider.com BODY section
+	<div id="wowslider-container">
+	<div class="ws_images"><ul>
+	<li><a href="http://www.wowslider.com/index.html#overview"><img src="{% static 'personal/images/slide1new.jpg' %}" title="" id="wows_0"/></a></li>
+	<li><a href="http://www.wowslider.com/demo.html"><img src="{% static 'personal/images/slide2new.jpg' %}" alt="You can add description to slides!" title="You can add description to slides!" id="wows_1"/></a></li>
+	<li><a href="http://www.wowslider.com/index.html#download"><img src="{% static 'personal/images/slide3new.jpg' %}" alt="" title="" id="wows_2"/></a></li>
+	<li><a href="http://www.wowslider.com/index.html#download"><img src="{% static 'personal/images/slider4new.png' %}" alt="" title="" id="wows_2"/></a></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+	<a href="#" title=""><img src="{% static 'personal/tooltips/slide1new.jpg' %}" alt=""/>1</a>
+	<a href="#" title="You can add description to slides!"><img src="{% static 'personal/tooltips/slide2new.jpg' %}" alt="You can add description to slides!"/>2</a>
+	<a href="#" title=""><img src="{% static 'personal/tooltips/slide3new.jpg' %}" alt=""/>3</a>
+	<a href="#" title=""><img src="{% static 'personal/tooltips/slider4new.png' %}" alt=""/>4</a>
+	</div></div>
+		<a href="#" class="ws_frame"></a>
+		<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="{% static 'personal/js/wowslider.js' %}"></script>
+	<script type="text/javascript" src="{% static 'personal/js/script.js' %}"></script>
+	 End WOWSlider.com BODY section -->
+	
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/weeI1G46q0o" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+<div id=gadget>
+<h2 style="background-color: rgb(184, 198, 213);">SOCIAL MEDIA GADGETS</h2>
+  {% include 'personal/gadget.html' %}
+
+
+</div>
 
 {% include "personal/includes/feedback.html" %}
 
