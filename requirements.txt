@@ -8,7 +8,7 @@ idna==2.6
 lxml==4.1.1
 oauthlib==2.0.6
 olefile==0.44
-Pillow==4.3.0
+Pillow==9.0.1
 PyJWT==1.5.3
 python-openid==2.2.5
 python-social-auth==0.3.6
