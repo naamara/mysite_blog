@@ -3,7 +3,7 @@ chardet==3.0.4
 Django==1.11.7
 django-instagram==0.2.0a1
 django-social-widgets==0.4.0
-html5lib==0.999
+html5lib==0.99999999
 idna==2.6
 lxml==4.1.1
 oauthlib==2.0.6
